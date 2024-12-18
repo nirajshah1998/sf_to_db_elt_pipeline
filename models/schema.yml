@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: MIGRATION_DATA  # Logical name for the source
+    database: MIGRATION  # Name of the database in Snowflake
+    schema: SF_TO_DB  # Name of the schema containing raw data
+    tables:
+      - name: CUSTOMERS  # Table name in Snowflake
+      - name: ORDERS
+      - name: PRODUCTS
